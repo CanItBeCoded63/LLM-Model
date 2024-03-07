@@ -11,7 +11,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 notes = []
-path = r'C:\\Users\\AYUSH\\OneDrive\\Desktop\\Python Testing\\fcc-gpt-course\\Deidentified_notes'
+path = r'//directory of your stored file
 for file_name in os.listdir(path):
     if file_name.endswith('.txt'):
         with open(os.path.join(path, file_name), 'r') as file:
@@ -22,7 +22,7 @@ for file_name in os.listdir(path):
 
 questions = []
 answers = []
-new_path = r'C:\\Users\\AYUSH\\OneDrive\\Desktop\\Python Testing\\fcc-gpt-course\\new.csv'
+new_path = r'//directory of your stored file
 with open(new_path, 'r') as file:
     reader = csv.reader(file)
     for line in reader:
